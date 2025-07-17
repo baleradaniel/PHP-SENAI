@@ -22,6 +22,7 @@
         </div>
     </li>
 </ul>
+
 <body>
     <center>
         <table align="center">
@@ -40,7 +41,8 @@
 
                 <tr align="left">
                     <td><label for="cnpj_fornecedor">CNPJ:</label></td>
-                    <td><input type="text" id="cnpj_fornecedor" name="cnpj_fornecedor" required onkeypress="mascaras(this,formatarCNPJ)"></td>
+                    <td><input type="text" id="cnpj_fornecedor" name="cnpj_fornecedor" required
+                            onkeypress="mascaras(this,formatarCNPJ)"></td>
                 </tr>
 
                 <tr align="left">
@@ -60,7 +62,8 @@
 
                 <tr align="left">
                     <td><label for="telefone_fornecedor">Telefone:</label></td>
-                    <td><input type="text" id="telefone_fornecedor" name="telefone_fornecedor" required onkeypress="mascaras(this,telefone)"></td>
+                    <td><input type="text" id="telefone_fornecedor" name="telefone_fornecedor" required
+                            onkeypress="mascaras(this,telefone)"></td>
                 </tr>
 
                 <tr align="left">
