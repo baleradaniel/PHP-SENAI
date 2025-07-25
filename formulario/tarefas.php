@@ -26,12 +26,8 @@ if (isset($_GET['nome']) && $_GET['nome'] != '') {
     $_SESSION['lista_tarefas'][] = $tarefa;
 }
 
-if (array_key_exists('lista_tarefas', $_SESSION)) {
-    $lista_tarefas = $_SESSION['lista_tarefas'];
-} else {
-    $lista_tarefas = [];
-}
+$lista_tarefas = buscar_tarefas($conexao);
 
+//session_destroy();
 include "template.php";
-    //session_destroy();
     ?>
