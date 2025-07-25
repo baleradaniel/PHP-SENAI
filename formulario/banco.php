@@ -8,4 +8,14 @@
             echo 'Problemas para conecar no banco.';
             die();
         }
+
+        function buscar_tarefas($conexao) {
+            $sqlBusca = 'SELECT * FROM tarefas';
+            $resultado = mysqli_query($conexao, $sqlBusca);
+            $tarefas = array();
+            while ($tarefa = mysqli_fetch_assoc($resultado)) {
+                $tarefas[] = $tarefa;
+            }
+        return $tarefas;
+        }
     ?>

@@ -1,5 +1,7 @@
 <?php
 session_start();
+include "banco.php";
+
 if (isset($_GET['nome']) && $_GET['nome'] != '') {
     $tarefa = array();
 
@@ -27,6 +29,7 @@ if (isset($_GET['nome']) && $_GET['nome'] != '') {
 }
 
 $lista_tarefas = buscar_tarefas($conexao);
+
 
 //session_destroy();
 include "template.php";
