@@ -30,6 +30,7 @@ if (isset($_GET['nome']) && $_GET['nome'] != '') {
 
 $lista_tarefas = buscar_tarefas($conexao);
 
+gravar_tarefa($conexao, $lista_tarefas);
 
 //session_destroy();
 include "template.php";
