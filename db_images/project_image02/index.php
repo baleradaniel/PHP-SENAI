@@ -3,7 +3,7 @@
 require_once 'conecta.php';
 
 // Cria a consulta SQL para selecionar os dados principais (sem a coluna de imagem)
-$querySelecao = "SELECT codigo, evento, descricao, nome_imagem, tamanho_imagem FROM tabela_imagem";
+$querySelecao = "SELECT codigo, evento, descricao, nome_imagem, tamanho_imagem FROM tabela_imagens";
 
 $result = mysqli_query($conn, $querySelecao);
 

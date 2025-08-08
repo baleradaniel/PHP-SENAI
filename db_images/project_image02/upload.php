@@ -20,7 +20,7 @@ if(!empty($imagem) && !empty($tamanho >0)){
     $conteudo = mysqli_real_escape_string($conn, $conteudo);
 
     // Insere os dados no banco de dados
-    $queryInsercao = "INSERT INTO tabela_imagem (evento, descricao, nome_imagem, tamanho_imagem, tipo_imagem, imagem) 
+    $queryInsercao = "INSERT INTO tabela_imagens (evento, descricao, nome_imagem, tamanho_imagem, tipo_imagem, imagem) 
                       VALUES ('$evento', '$descricao', '$nome', '$tamanho', '$tipo', '$conteudo')";
     $result = mysqli_query($conn, $queryInsercao);
 
