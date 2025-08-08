@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <center>
         <h1>Cadastro</h1>
         <h2>Funcionario</h2>
         <!-- Formulário de cadastro de funcionário -->
@@ -16,17 +17,18 @@
             <label for="name">Nome: </label>
             <input type="text" id="nome" name="nome" required>
             <br>
-
-            <label for="Telefone">Telefone:</label>
-            <textarea id="telefone" name="telefone" required></textarea>
             <br>
-
+            <label for="Telefone">Telefone:</label>
+            <input id="telefone" name="telefone" required></input>
+            <br>
+            <br>
             <label for="imagem">Imagem:</label>
             <input type="file" id="foto" name="foto" accept="image/*" required>
             <br>
-            
+            <br>
             <button type="submit">Cadastrar</button>
         </form>
+        </center>
     </div>
     
 </body>
